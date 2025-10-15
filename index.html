@@ -2,23 +2,66 @@
 <html lang="ru">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Nova AI Chat</title>
+  <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+  <title>Metro Exodus — Жизнь под землёй</title>
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-  <div class="chat-container">
-    <header>💬 Nova — твой AI ассистент</header>
-    <div id="chatBox" class="chat-box"></div>
+  <header class="header">
+    <div class="logo">METRO<span>EXODUS</span></div>
+    <div class="menu-btn" id="menuBtn">☰</div>
+    <nav class="nav" id="nav">
+      <a href="#about">О игре</a>
+      <a href="#features">Особенности</a>
+      <a href="#buy" class="btn">Купить</a>
+    </nav>
+  </header>
 
-    <div class="input-area">
-      <input type="text" id="userInput" placeholder="Спроси что угодно..." />
-      <button id="sendBtn" class="send-btn">
-        <span class="arrow">➤</span>
-      </button>
+  <section class="hero">
+    <video autoplay muted loop id="bgVideo">
+      <source src="video.mp4" type="video/mp4" />
+    </video>
+    <!-- <iframe width="560" height="315" src="https://www.youtube.com/embed/gUNaIgeOXqY?si=6sy64bRaV-jrUsbd" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe> -->
+    <div class="hero-content">
+      <h1>METRO: EXODUS</h1>
+      <p>Оставь подземелье. Почувствуй солнце. Выживи любой ценой.</p>
+      <a href="#buy" class="cta">Играть сейчас</a>
     </div>
-  </div>
+  </section>
 
+  <section id="about" class="about">
+    <h2>О игре</h2>
+    <p>«Метро: Исход» — это шутер нового поколения с элементами выживания, созданный по вселенной Дмитрия Глуховского. 
+      Выбирайся из мрачных тоннелей метро и отправляйся в опасное путешествие по разрушенной России в поисках новой жизни.</p>
+  </section>
+
+  <section id="features" class="features">
+    <h2>Особенности</h2>
+    <div class="cards">
+      <div class="card">
+        <h3>⚙ Реализм и атмосфера</h3>
+        <p>Потрясающая графика и глубокая атмосфера апокалипсиса — ты почувствуешь холод каждого выстрела.</p>
+      </div>
+      <div class="card">
+        <h3>🌍 Открытый мир</h3>
+        <p>Исследуй огромные локации России — от заснеженных гор до радиоактивных пустошей.</p>
+      </div>
+      <div class="card">
+        <h3>🧭 Выбор и последствия</h3>
+        <p>Каждое решение влияет на судьбу твоей команды. Каждый выстрел имеет цену.</p>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <h2>Купить игру</h2>
+    <p>Доступна на всех платформах: PC, Xbox, PlayStation, Steam Deck.</p>
+    <button id="buyBtn" class="buy-btn">🔥 Купить сейчас</button>
+  </section>
+
+  <footer class="footer">
+    <p>© 2025 Metro Exodus Fan Site. Все права защищены.</p>
+  </footer>
   <script src="script.js"></script>
 </body>
-</html>
+</html>`
